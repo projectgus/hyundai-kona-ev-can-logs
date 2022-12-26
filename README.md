@@ -20,6 +20,8 @@ This repo contains logs from:
 
 Numbers 'TS nnn` are log timestamps in seconds, correlated from videos or notes. Approximate only.
 
+Many logs have accompanying videos that I haven't put in the repo (too big). If you're unsure about what happens at a particular time then you can open an Issue and ask me to check the video, I'll see what I can do.
+
 ### 221207-1-2019-pcan-dcan-vehicle-ready-scancodes-custompids.csv
 Model: 2019
 Channel 0: PCAN, Channel 1: DCAN with an OBD2 BT dongle attached.
