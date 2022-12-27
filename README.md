@@ -18,12 +18,13 @@ This repo contains logs from:
 
 ## Logs
 
-Numbers 'TS nnn` are log timestamps in seconds, correlated from videos or notes. Approximate only.
+Numbers `TS nnn` are log timestamps in seconds, correlated from videos or notes. Approximate only.
 
 Many logs have accompanying videos that I haven't put in the repo (too big). If you're unsure about what happens at a particular time then you can open an Issue and ask me to check the video, I'll see what I can do.
 
 ### 221207-1-2019-pcan-dcan-vehicle-ready-scancodes-custompids.csv
 Model: 2019
+
 Channel 0: PCAN, Channel 1: DCAN with an OBD2 BT dongle attached.
 
 Vehicle is Powered On and Ready for the entire log.
@@ -34,6 +35,7 @@ Starting around TS 337, running the [custom PIDs for Kona](https://github.com/Je
 
 ### 221207-2-2019-pcan-dcan-vehicle-on-off-change-gears.csv
 Model: 2019
+
 Channel 0: PCAN, Channel 1: DCAN
 
 Car is stationary for the whole log, putting it through various modes.
@@ -60,6 +62,7 @@ Channel 1 has an OBD2 BT dongle attached, session is alive but no interactions.
 
 ### 221207-3-2021-pcan-dc-fast-charge-fail.csv
 Model: 2021
+
 Channel 0: PCAN
 
 Connecting to a DC fast charger while a charging system fault was present (charge
@@ -68,25 +71,25 @@ plug socket control connector had been unplugged in the engine bay.)
 Charging session doesn't initiate, vehicle doesn't even show the charge
 connector plug-in light on the cluster display.
 
-* 20221207-1644-2021-dc-fast-charge-fail.csv
-** 0 is PCAN
-** 675 approx is when we connected to fast charger
-** didn't take, likely due to the existing fault
+TS 675 (approx) is when vehicle was connected to fast charger
 
 ### 221210-1-2021-dcan-car-scanner-elm327.csv
 Model: 2021
+
 Channel 1: DCAN
 
 Running the [Car Scanner ELM OBD2](https://www.carscanner.info/) app to scan for DTCs, with presets for Kona that ship in that app.
 
 ### 221210-2-2021-dcan-car-scanner-elm327-vcu-mcu-only.csv
 Model: 2021
+
 Channel 1: DCAN
 
 As above, but with only VCU & MCU selected in the app interface.
 
 ### 221210-3-2021-pcan-dcan-in-ready.csv
 Model: 2021
+
 Channel 0: PCAN, Channel 1: DCAN
 
 Vehicle sitting in "Ready" but not driving. No fault codes present.
@@ -95,6 +98,7 @@ Diagnostic app on Channel 1 is running, session is alive but I think idle the wh
 
 ### 221211-1-2021-pcan-dcan-dc-fast-charge.csv
 Model: 2021
+
 Channel 0: DCAN, Channel 1: PCAN
 
 Successful DC fast charge session.
@@ -115,6 +119,7 @@ Channel 1 is running Car Scanner app with live PID monitoring open.
 
 ### 221217-1-2021-pcan-bcan-no-key.csv
 Model: 2021
+
 Channel 0: PCAN, Channel 1: BCAN
 
 Trying to start without smart key in vehicle.
@@ -129,6 +134,7 @@ Starts with vehicle "off" but not asleep.
 
 ### 221217-2-2021-pcan-bcan-drive-modes.csv
 Model: 2021
+
 Channel 0: PCAN, Channel 1: BCAN
 
 Driving at low speeds on private property (gravel/dirt).
@@ -211,6 +217,7 @@ Driving at low speeds on private property (gravel/dirt).
 
 ### 221217-3-2021-pcan-ccan-drive-modes-abs-traction.csv
 Model: 2021
+
 Channel 0: PCAN, Channel 1: CCAN
 
 Continuation of previous log, more driving at low speeds on private property (gravel/dirt). However, Channel 1 is now CCAN.
@@ -237,6 +244,7 @@ Continuation of previous log, more driving at low speeds on private property (gr
 
 ### 221217-4-2021-pcan-ccan-menus-no-video.csv
 Model: 2021
+
 Channel 0: PCAN, Channel 1: CCAN
 
 Stationary vehicle. Messing about in the head unit Settings menu changing a bunch of settings (drive
@@ -245,6 +253,7 @@ one, so no reference timestamps.
 
 ### 221217-5-2021-pcan-ccan-menus.csv
 Model: 2021
+
 Channel 0: PCAN, Channel 1: CCAN
 
 Redoing the previous log, but with a reference video this time. Car is
@@ -319,6 +328,7 @@ contain anything relevant (unknown).
 
 ### 221217-6-2021-pcan-ccan-live-battery-monitor.csv
 Model: 2021
+
 Channel 0: PCAN, Channel 1: CCAN
 
 Viewing the "Energy consumption view" screen while doing various things to
