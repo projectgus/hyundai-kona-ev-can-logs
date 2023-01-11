@@ -391,3 +391,131 @@ contain anything relevant (unknown).
 * TS 2678 Switch to Reverse
 * TS 2700 Switch to Park
 * TS 2702 Power off
+
+### 221228-1-2019-pcan-ccan-fuse-pulling-engine-bay.csv
+Model: 2019
+
+Channel 0: PCAN, Channel 1: CCAN
+
+Purpose of this log is to help isolate IDs to modulates by power cycling the car
+various times with different fuses pulled. Between each fuse pull there will be
+a gap in the logs which the car is powered off (12V battery disconnected.)
+
+This session was pulling fuses from the engine bay fuse box.
+
+* TS 40 Power on "control" run with all fuses in
+* TS 50 Disconnected
+
+Remove EPCU fuses 1 & 2
+
+* TS 226 Battery connected
+* TS 240ish "Power on" (ACC mode)
+* TS 260ish Power off
+* TS 275 Battery disconnected
+
+Remove OBC fuse (only, there are also adjacent fuses "Charger 1" & "Charger 2", see later log file.)
+
+* TS 329 Battery connected
+* TS 347 "Power on" (ACC mode)
+* TS 363 Power off
+* TS 372 Battery disconnected
+
+Remove IEB (Brake unit) fuses 1 & 2
+
+* TS 415 Battery connnected
+* TS 430 "Power on" (ACC mode)
+* TS 444 "Power off"
+* TS 452 Battery disconnected
+
+All fuses present (again)
+
+* TS 475 Battery connected
+* TS 490 Power on (ACC mode)
+
+
+### 221228-2-2019-dcan-dtcs-session.csv
+Model: 2019
+
+Channel 0: DCAN
+
+Pulling & clearing DTCs using Car Scanner app.
+
+* First scan was for limited ECUs only. ABS showing non-active codes C1638(08), C16B6(87), C1806(87), C1614(87), C1643(08)
+* Clear codes
+* Second scan was for all ECUs:
+  - "4WD" (???) U0110, U0293
+  - "Onboard Charger (Hybrid/EV)" U0110, U0293
+  - "Wireless power charger" B1603(00)
+  - IGPM B1603(00), B2801(00), C167C(00), B2211(00), C1829(00)
+  - Head Up Display B2801(00)
+  - Smart Key Module B1603(00)
+  - HVAC B1238(13)
+  - Blind spot detection C1812(87), C1614(87)
+  - ABS control unit C16B6(87), C1638(08)
+  - Electric Power Steering C1812(87)
+  - Lane assistance/Front view camera C1812(87), C1614(87), C16B6(87)
+  - "Dashbaord" (cluster?) B1001(52)
+* Clear codes
+
+### 221228-3-2019-pcan-ccan-fuse-pulling-driver-and-engine-bay.csv
+Model: 2019
+
+Channel 0: PCAN, Channel 1: CCAN
+
+Same as 221228-1-2019-pcan-ccan-fuse-pulling-engine-bay, but working from the driver's inside fuse panel (and then some from the engine bay).
+
+Removing inside fuses from IGPM:
+
+Disconnect smart key unit fuses (probably they are this. One is marked "PDM" in some references, plus all fuses marked with symbol like ↻ in fuse box. Fuses numbered 1,2,34 (each with the circular arrow symbol).
+
+* Battery was reattached before logging started
+* No power on - button causes head unit to light up, and "check steering wheel lock on dash"
+* Press start button a couple more times during log
+* TS 699 Battery disconnected
+
+Disconnect FCA system
+
+* TS 805ish Battery connected
+* TS 825ish power on (ACC mode)
+* TS 828ish power on to Ready
+* TS 845 power off
+* TS 859 Battery disconnected
+
+Disconnect AC fuse
+
+* TS 896 Battery connected
+* TS 918 Power on (ACC moe)
+* TS 925 Power on (Ready)
+* TS 940 Power off
+* TS 954 Battery disconnected
+
+Removing engine bay fuses again from here:
+
+Disconnect battery management fuse.
+
+* TS 1037 Battery connected
+* TS 1056 Power on ( ACC)
+* TS 1083 Attempt power on to ready, fails. Turtle flashing on cluster. No visible battery level on cluster.
+* TS 1099 Power off
+* TS 1112 Battery disconnected
+
+Disconnect OBC & Charger 1 & Charger 2 fuses (similar to previous log but removing all three).
+
+* TS 1196 Battery connected
+* TS 1208 Power on (ACC mode)
+* TS 1215 Power on to Ready
+* TS 1230 Power off
+* TS 1241 Battery disconnected
+
+All fuses present again:
+
+* TS 1329 Battery connected again
+
+### 221228-4-2019-ac-charging.csv
+
+AC charging session with a portable AC charger, configured variously for 6A, 8A, 10A max current.
+
+### 221228-5-2019-scheduled-charge-session.log
+
+Using same AC charger as previous session, set for 8A max current, with vehicle pre-configured to only allow charging during "off-peak" which starts at 12:40 (~6 minutes after logging starts).
+

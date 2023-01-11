@@ -2,12 +2,11 @@
 
 Starting to collect notes on CAN IDs seen in the logs.
 
-## PCAN
+## 0x109
 
-### 0x109
-
-Interval: 10ms
-Sender: ???
+| Bus  | Interval | Sender |
+|------|----------|--------|
+| PCAN | 10ms     | ???    |
 
 Sample value: 00 01 00 FF FF FF 0F <counter>
 
@@ -28,10 +27,11 @@ Bytes:
 * 6: 0F
 * 7: counter, seems to change both high and low nibbles each time (two 4-bit counters?)
 
-### 0x10C
+## 0x10C
 
-Interval: 10ms
-Sender: ????
+| Bus  | Interval | Sender |
+|------|----------|--------|
+| PCAN | 10ms     | ???    |
 
 Sample value: 04 00 54 15 40 01 24
 
@@ -51,8 +51,9 @@ Bytes:
 
 ### 0x153
 
-Interval: 10ms
-Sender: ????
+| Bus  | Interval | Sender |
+|------|----------|--------|
+| PCAN | 10ms     | ???    |
 
 Sample value: a0 a9 20 ff 00 ff e0 47
 
@@ -62,8 +63,9 @@ Sample value: a0 a9 20 ff 00 ff e0 47
 
 ### 0x200
 
-Interval: 10ms
-Sender: ????
+| Bus  | Interval | Sender |
+|------|----------|--------|
+| PCAN | 10ms     | ???    |
 
 Sample value:  00 80 89 10 00 3b d0 00
 
@@ -106,8 +108,9 @@ Bytes:
 
 ### 0x202
 
-Interval: 10ms
-Sender: ????
+| Bus  | Interval | Sender |
+|------|----------|--------|
+| PCAN | 10ms     | ???    |
 
 Sample value: 62 00 20 00 00 00 44 06
 
@@ -123,8 +126,9 @@ Sample value: 62 00 20 00 00 00 44 06
 
 ### 0x220
 
-Interval: 10ms when Power On, missing otherwise
-Sender: ??? Something powered from IG3, i.e. when power is on
+| Bus  | Interval                  | Sender                                           |
+|------|---------------------------|--------------------------------------------------|
+| PCAN | 10ms when Power On, only. | Something powered from "IG3" when vehicle is on? |
 
 Some kind of sensor values
 
@@ -133,3 +137,20 @@ Some kind of sensor values
 * 2,3 seem to be part of one value with 2==MSB,3==LSB
 
 * 7: Counter
+
+### 0x588
+
+| Bus        | Interval                 | Sender |
+|------------|--------------------------|--------|
+| PCAN, BCAN | 10ms (PCAN), Less (BCAN) | ???    |
+
+This ID seems to have different payload on BCAN vs PCAN, is unchanging(?)
+
+Payload on PCAN is FC FF 03 00 00 00 00 00 (maybe always is this?)
+
+Payload on BCAN is 00 00 00 00 00 00 00 00 when vehicle is Off.
+
+
+
+
+
