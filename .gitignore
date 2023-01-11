@@ -1,0 +1,2 @@
+*.log  # Keeping the raw python-can logs in this directory but not in git, too big. CSVs are equivalent.
+__pycache__/
