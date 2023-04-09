@@ -128,7 +128,7 @@ Starts with vehicle "off" but not asleep.
 
 0:00 == TS 303
 
-* TS 316 Press "Start Stop" button, display says "Key not detected"
+* TS 316 Press "Start Stop" button, display says "Key not detected"s
 * TS 321 Press "Start Stop button again", display says "Press POWER button with key".
 * TS 325 Press one more time
 
@@ -149,7 +149,7 @@ Driving at low speeds on private property (gravel/dirt).
 * TS 388 Close left front door (two other signals on dash: bonnet is "open" and car will also complain about right door open for entire drive, chassis is bent).
 * TS 402 Press "Drive" button, foot is off brake so stays in Park
 * TS 412 Foot on brake, Press "Drive", change to Drive
-* TS 417 Start moving
+* TS 417 Start moving (probably @ 416361000)
 * TS 427 Stop moving briefly, still in Drive
 * TS 436 Stop again
 * TS 438 Switch to Park
