@@ -515,6 +515,8 @@ All fuses present again:
 
 AC charging session with a portable AC charger, configured variously for 6A, 8A, 10A max current.
 
+Charging starts around TS 26652.
+
 ### 221228-5-2019-scheduled-charge-session.log
 
 Using same AC charger as previous session, set for 8A max current, with vehicle pre-configured to only allow charging during "off-peak" which starts at 12:40 (~6 minutes after logging starts).
