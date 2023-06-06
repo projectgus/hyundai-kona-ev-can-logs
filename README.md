@@ -527,6 +527,8 @@ This log is from a third vehicle, not the same as the other two. It's from only 
 
 Power supplied to the power input pins (12V to large pins 47 & 48, 12V to small pin 46 for ignition/on, GND to 16.)
 
-CAN log is reading channel 1 from pins 28 & 29 (P-CAN High & Low). There are two other CAN bus connections on this board: a second P-CAN on pins 9 & 10 (High & Low). This P-CAN is active but didn't send any traffic. Then there is a third CAN bus "CCP-CAN", marked unused and not seen to power up.
+CAN connections:
 
-Theory is that the logged P-CAN is the VCU microcontroller on the board, and the second P-CAN is an independent link to the MCU microcontroller which is not active by default.
+* P-CAN pins 9 & 10 (H & L). This P-CAN bus is active but didn't send any messages in this configuration.
+* P-CAN pins 28 & 29 (H & L). This P-CAN bus is what was logged, as Channel 1.
+* "CCP-CAN". Marked unused, does not seem to be powered on.
