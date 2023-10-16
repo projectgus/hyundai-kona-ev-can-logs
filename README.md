@@ -533,7 +533,7 @@ CAN connections:
 * P-CAN pins 28 & 29 (H & L). This P-CAN bus is what was logged, as Channel 1.
 * "CCP-CAN". Marked unused, does not seem to be powered on.
 
-### 221228-3-2019-pcan-ccan-fuse-pulling-driver-and-engine-bay.csv
+### 231016-2019-srscm-bench-pcan-ccan.csv
 Model: 2019
 
 Channel 0: PCAN, Channel 1: CCAN
