@@ -532,3 +532,12 @@ CAN connections:
 * P-CAN pins 9 & 10 (H & L). This P-CAN bus is active but didn't send any messages in this configuration.
 * P-CAN pins 28 & 29 (H & L). This P-CAN bus is what was logged, as Channel 1.
 * "CCP-CAN". Marked unused, does not seem to be powered on.
+
+### 221228-3-2019-pcan-ccan-fuse-pulling-driver-and-engine-bay.csv
+Model: 2019
+
+Channel 0: PCAN, Channel 1: CCAN
+
+This log is *only* the SRSCM (SRS Control Module, i.e. airbag ECU) powered on the bench with nothing connected except for the PCAN and CCAN buses and a 1K pullup resistor to 12V on the Crash Output signal.
+
+The crash output signal showed 80% duty cycle 12V 50Hz PWM while this capture was taken.
