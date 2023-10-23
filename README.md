@@ -6,7 +6,8 @@ Log files are in the SavvyCAN "GVRET" CSV format.
 
 ## See also
 
-* `CAN IDS.md` has some preliminary notes about CAN IDs visible in these logs.
+* The `dbc/` directory contains a DBC file with data pieced together so far. See the README in that directory. Note that DBC files aren't really readable as plain text, use a tool like [SavvyCAN](https://savvycan.com/) or [Cabana](https://www.projectgus.com/2023/10/kona-can-decoding/#new-cabana).
+* `CAN IDS.md` has some older preliminary notes about CAN IDs visible in these logs. Mostly superceded by the DBC file.
 * [This Google Sheet](https://docs.google.com/spreadsheets/d/1-9jZafV9eZeBUnPQo7qQHbX2-_4qZfWfRVpidoF1owA/edit#gid=660740603) from 2018 (author unknown) is mostly about Diagnostic OBD2 PIDs, but includes a useful diagram of the vehicle CAN bus architecture showing all the buses connected to the CAN gateway ("CGW" in the diagram, Hyundai seems to more typically call it the Integrated Gateway Power Module "IGPM").
 
 ## Vehicles
