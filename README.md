@@ -22,8 +22,12 @@ Numbers `TS nnn` are log timestamps in seconds, correlated from videos or notes.
 
 Many logs have accompanying videos that I haven't put in the repo (too big). If you're unsure about what happens at a particular time then you can open an Issue and ask me to check the video, I'll see what I can do.
 
+Many of these logs become intermittent part way through due to consistently dropped messages, some kind of capturing issue. [More details in this blog post](https://www.projectgus.com/2023/10/kona-can-decoding/#bad-logs). There are notes below about if/when this seems to happen in each log.
+
 ### 221207-1-2019-pcan-dcan-vehicle-ready-scancodes-custompids.csv
 Model: 2019
+
+(Log has no dropped messages.)
 
 Channel 0: PCAN, Channel 1: DCAN with an OBD2 BT dongle attached.
 
@@ -35,6 +39,8 @@ Starting around TS 337, running the [custom PIDs for Kona](https://github.com/Je
 
 ### 221207-2-2019-pcan-dcan-vehicle-on-off-change-gears.csv
 Model: 2019
+
+(Log probably has no dropped messages.)
 
 Channel 0: PCAN, Channel 1: DCAN
 
@@ -63,6 +69,8 @@ Channel 1 has an OBD2 BT dongle attached, session is alive but no interactions.
 ### 221207-3-2021-pcan-dc-fast-charge-fail.csv
 Model: 2021
 
+(Log may become intermittent after approx TS 695)
+
 Channel 0: PCAN
 
 Connecting to a DC fast charger while a charging system fault was present (charge
@@ -76,12 +84,16 @@ TS 675 (approx) is when vehicle was connected to fast charger
 ### 221210-1-2021-dcan-car-scanner-elm327.csv
 Model: 2021
 
+(Log probably has no dropped messages.)
+
 Channel 1: DCAN
 
 Running the [Car Scanner ELM OBD2](https://www.carscanner.info/) app to scan for DTCs, with presets for Kona that ship in that app.
 
 ### 221210-2-2021-dcan-car-scanner-elm327-vcu-mcu-only.csv
 Model: 2021
+
+(Log probably has no dropped messages.)
 
 Channel 1: DCAN
 
@@ -90,14 +102,26 @@ As above, but with only VCU & MCU selected in the app interface.
 ### 221210-3-2021-pcan-dcan-in-ready.csv
 Model: 2021
 
+(This log appears to become intermittent after TS320.)
+
 Channel 0: PCAN, Channel 1: DCAN
 
 Vehicle sitting in "Ready" but not driving. No fault codes present.
 
 Diagnostic app on Channel 1 is running, session is alive but I think idle the whole time.
 
+### 221210-4-2021-pcan-dcan-read-dtcs-with-app.csv
+
+(TS 1115 the log becomes intermittent.)
+
+### 221210-5-2021-pcan-dcan-car-scanner-read-all-params.csv
+
+(TS 214 the log becomes intermittent.)
+
 ### 221211-1-2021-pcan-dcan-dc-fast-charge.csv
 Model: 2021
+
+(TS 325 log is probably intermittent.)
 
 Channel 0: DCAN, Channel 1: PCAN
 
@@ -120,6 +144,8 @@ Channel 1 is running Car Scanner app with live PID monitoring open.
 ### 221217-1-2021-pcan-bcan-no-key.csv
 Model: 2021
 
+(This log probably has no dropped messages.)
+
 Channel 0: PCAN, Channel 1: BCAN
 
 Trying to start without smart key in vehicle.
@@ -134,6 +160,8 @@ Starts with vehicle "off" but not asleep.
 
 ### 221217-2-2021-pcan-bcan-drive-modes.csv
 Model: 2021
+
+(TS557 log probably becomes intermittent.)
 
 Channel 0: PCAN, Channel 1: BCAN
 
@@ -218,6 +246,8 @@ Driving at low speeds on private property (gravel/dirt).
 ### 221217-3-2021-pcan-ccan-drive-modes-abs-traction.csv
 Model: 2021
 
+(TS 1574, log becomes intermittent)
+
 Channel 0: PCAN, Channel 1: CCAN
 
 Continuation of previous log, more driving at low speeds on private property (gravel/dirt). However, Channel 1 is now CCAN.
@@ -245,6 +275,8 @@ Continuation of previous log, more driving at low speeds on private property (gr
 ### 221217-4-2021-pcan-ccan-menus-no-video.csv
 Model: 2021
 
+(TS1890, log becomes intermittent)
+
 Channel 0: PCAN, Channel 1: CCAN
 
 Stationary vehicle. Messing about in the head unit Settings menu changing a bunch of settings (drive
@@ -253,6 +285,8 @@ one, so no reference timestamps.
 
 ### 221217-5-2021-pcan-ccan-menus.csv
 Model: 2021
+
+(TS2298, log becomes intermittent)
 
 Channel 0: PCAN, Channel 1: CCAN
 
@@ -328,6 +362,8 @@ contain anything relevant (unknown).
 
 ### 221217-6-2021-pcan-ccan-live-battery-monitor.csv
 Model: 2021
+
+(TS2556 log becomes intermittent)
 
 Channel 0: PCAN, Channel 1: CCAN
 
@@ -513,15 +549,53 @@ All fuses present again:
 
 ### 221228-4-2019-ac-charging.csv
 
+(TS2881 or maybe TS2935, log becomes intermittent.)
+
 AC charging session with a portable AC charger, configured variously for 6A, 8A, 10A max current.
 
 Charging starts around TS 26652.
 
-### 221228-5-2019-scheduled-charge-session.log
+### 221228-5-2019-scheduled-charge-session.csv
+
+(TS3775, log becomes intermittent - may be later, as some "vehicle off time" in this log.)
 
 Using same AC charger as previous session, set for 8A max current, with vehicle pre-configured to only allow charging during "off-peak" which starts at 12:40 (~6 minutes after logging starts).
 
+### 230112-1-2019-pcan-bcan-ac-compressor-cycles.csv
+
+(TS432, log becomes intermittent.)
+
+### 230112-2-2019-pcan-ccan-drive-modes-incomplete.csv
+
+(TS1226, log becomes intermittent.)
+
+### 230112-3-2019-pcan-ccan-drive-modes-take2.csv
+
+(TS1421.96, log becomes intermittent.)
+
+### 230112-4-2019-pcan-ccan-driving.csv
+
+(TS1014.5, log becomes intermittent.)
+
+### 230112-5-2019-pcan-ccan-maybe-reconnect-front.csv
+
+(Does not appear to become intermittent.)
+
+### 230112-6-2019-pcan-ccan-no-key.csv
+
+(Does not appear to become intermittent.)
+
+### 230112-7-2019-pcan-ccan-power-off-on-ready-off.csv
+
+(Does not appear to become intermittent.)
+
+### 230112-8-2019-pcan-dcan-live-monitoring-params.csv
+
+(TS2565 the log becomes intermittent.)
+
 ### 230606-1-2021-epcu-control-board-only.csv
+
+(The log does not appear to become intermittent.)
 
 This log is from a third vehicle, not the same as the other two. It's from only the EPCU control board removed from the EPCU unit and powered on the bench (no connections to gate driver board or resolver.)
 
