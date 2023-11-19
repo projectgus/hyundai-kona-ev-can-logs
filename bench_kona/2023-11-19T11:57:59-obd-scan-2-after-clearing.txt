@@ -1,0 +1,69 @@
+﻿Car Scanner ELM OBD2
+Version: 1.101.4/401014/GP
+DTC report
+Connection profile: Hyundai Kona EV/Niro EV/Soul EVDate: 19/11/2023 12:12:17 PM
+VIN: SEVBMS
+============================
+OBD-IIOBD-II
+DTCs: 6
+----------------------------
+P1A6F(00) [0x1A6F00]
+Status: Test failed, Test failed (current drive cycle), Pending, Test failed since last DTC clear
+----------------------------
+U1128(00) [0xD12800]
+Status: Test failed, Test failed (current drive cycle), Pending, Test failed since last DTC clear
+----------------------------
+P1A78 [0x1A78]
+Status: Test is inhibited by other DTC, Validated fault present at time of request, Validated fault has been present during this drive cycle
+----------------------------
+U0129 [0xC129]
+Data bus, brake system control module - no communication
+Status: Test conditions are met, Validated fault present at time of request
+----------------------------
+U0146 [0xC146]
+Data bus, gateway A - no communication
+Status: Test conditions are met, Validated fault present at time of request
+----------------------------
+U0164 [0xC164]
+Data bus, AC control module - no communication
+Status: Test conditions are met, Validated fault present at time of request
+============================
+Vehicle Motor control unitVehicle Motor control unit
+DTCs: 4
+----------------------------
+P1A78 [0x1A78]
+Status: Test is inhibited by other DTC, Validated fault present at time of request, Validated fault has been present during this drive cycle
+----------------------------
+U0129 [0xC129]
+Data bus, brake system control module - no communication
+Status: Test conditions are met, Validated fault present at time of request
+----------------------------
+U0146 [0xC146]
+Data bus, gateway A - no communication
+Status: Test conditions are met, Validated fault present at time of request
+----------------------------
+U0164 [0xC164]
+Data bus, AC control module - no communication
+Status: Test conditions are met, Validated fault present at time of request
+============================
+Motor control unit
+No DTC found.
+============================
+Battery management systemBattery management system
+DTCs: 2
+----------------------------
+P1A6F(00) [0x1A6F00]
+Status: Test failed, Test failed (current drive cycle), Pending, Test failed since last DTC clear
+----------------------------
+U1128(00) [0xD12800]
+Status: Test failed, Test failed (current drive cycle), Pending, Test failed since last DTC clear
+============================
+4WD #1 / OnBoard Charger (Hybrid/EV)4WD #1 / OnBoard Charger (Hybrid/EV)
+DTCs: 1
+----------------------------
+U0146 [0xC146]
+Data bus, gateway A - no communication
+Status: Test conditions are met, Validated fault present at time of request
+============================
+E-Shifter
+No DTC found.

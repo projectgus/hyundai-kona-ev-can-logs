@@ -1,0 +1,86 @@
+﻿Car Scanner ELM OBD2
+Version: 1.101.4/401014/GP
+DTC report
+Connection profile: Hyundai Kona EV/Niro EV/Soul EVDate: 19/11/2023 12:08:45 PM
+VIN: SEVBMS
+============================
+OBD-IIOBD-II
+DTCs: 7
+----------------------------
+U1128(00) [0xD12800]
+Status: Test failed, Test failed (current drive cycle), Pending, Confirmed, Test failed since last DTC clear, Warning indicator requested
+----------------------------
+P1A6F(00) [0x1A6F00]
+Status: Test failed, Test failed (current drive cycle), Pending, Test failed since last DTC clear, Warning indicator requested
+----------------------------
+P1A78 [0x1A78]
+Status: Test is inhibited by other DTC, Validated and stored in non volatile memory, Validated fault present at time of request, Validated fault has been present during this drive cycle
+----------------------------
+U0129 [0xC129]
+Data bus, brake system control module - no communication
+Status: Test conditions are met, Validated and stored in non volatile memory, Validated fault present at time of request, Validated fault has been present during this drive cycle
+----------------------------
+U0146 [0xC146]
+Data bus, gateway A - no communication
+Status: Test conditions are met, Validated and stored in non volatile memory, Validated fault present at time of request
+----------------------------
+U0164 [0xC164]
+Data bus, AC control module - no communication
+Status: Test conditions are met, Validated and stored in non volatile memory, Validated fault present at time of request
+----------------------------
+P0D59 [0x0D59]
+Status: Test is inhibited by other DTC, Validated and stored in non volatile memory
+
+============================
+Vehicle Motor control unit
+DTCs: 4
+----------------------------
+P1A78 [0x1A78]  - Check IG3 Relay or Back Up Lamp Circuit
+Status: Test is inhibited by other DTC, Validated and stored in non volatile memory, Validated fault present at time of request, Validated fault has been present during this drive cycle
+----------------------------
+U0129 [0xC129]
+Data bus, brake system control module - no communication
+Status: Test conditions are met, Validated and stored in non volatile memory, Validated fault present at time of request, Validated fault has been present during this drive cycle
+----------------------------
+U0146 [0xC146]
+Data bus, gateway A - no communication
+Status: Test conditions are met, Validated and stored in non volatile memory, Validated fault present at time of request
+----------------------------
+U0164 [0xC164]
+Data bus, AC control module - no communication
+Status: Test conditions are met, Validated and stored in non volatile memory, Validated fault present at time of request
+
+============================
+Motor control unit
+No DTC found.
+
+============================
+Battery management system
+DTCs: 2
+----------------------------
+U1128(00) [0xD12800]
+Status: Test failed, Test failed (current drive cycle), Pending, Confirmed, Test failed since last DTC clear, Warning indicator requested
+Lost Communication With Hybrid/EV Battery Electric Coolant Valve "A" (BAT)
+----------------------------
+P1A6F(00) [0x1A6F00]
+Status: Test failed, Test failed (current drive cycle), Pending, Test failed since last DTC clear, Warning indicator requested
+P1A6F00 Airbag Deployment Signal Circuit High
+
+============================
+4WD #1 / OnBoard Charger (Hybrid/EV)4WD #1 / OnBoard Charger (Hybrid/EV)
+DTCs: 2
+----------------------------
+P0D59 [0x0D59]
+Proximity Detection Circuit High
+Status: Test is inhibited by other DTC, Validated and stored in non volatile memory
+----------------------------
+U0146 [0xC146]
+Data bus, gateway A - no communication
+Status: Test conditions are met, Validated and stored in non volatile memory, Validated fault present at time of request, Validated fault has been present during this drive cycle
+============================
+E-ShifterE-Shifter
+DTCs: 1
+----------------------------
+C1614(87) [0x561487]
+CAN Time-out HCU/VCU/FCU
+Status: Test failed, Test failed (current drive cycle), Pending, Confirmed, Test failed since last DTC clear
