@@ -616,3 +616,14 @@ Channel 0: PCAN, Channel 1: CCAN
 This log is *only* the SRSCM (SRS Control Module, i.e. airbag ECU) powered on the bench with nothing connected except for the PCAN and CCAN buses and a 1K pullup resistor to 12V on the Crash Output signal.
 
 The crash output signal showed 80% duty cycle 12V 50Hz PWM while this capture was taken.
+
+### 240114-09-2021-creep-limit
+
+Car is on a hill facing up. Testing limits of "creep" mode.
+
+* Start with foot on brake in Park. Into Drive
+* Take foot off brake, car doesn't move (hill too steep.)
+* Put accelerator down, car moves forward
+* Remove foot from accelerator (no brake)
+* Car slows down, rolls backwards for a time, then comes to a stop (no brake applied)
+
