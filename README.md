@@ -627,3 +627,41 @@ Car is on a hill facing up. Testing limits of "creep" mode.
 * Remove foot from accelerator (no brake)
 * Car slows down, rolls backwards for a time, then comes to a stop (no brake applied)
 
+
+### 240512-1-comp-can-pcan
+
+2021 Kona.
+
+Ch0 is "COMP CAN", the small CAN network between the A/C controller, compressor and PTC heater. Ch1 is PCAN.
+
+Stationary vehicle, alternatively turning the A/C and the heater on and off.
+
+### 240512-2-pcan-regen-brake
+
+2021 Kona.
+
+Ch0 PCAN. Using the regen braking "hold left paddle" feature (I think).
+
+### 240512-3-pcan-rolling-neutral
+
+2021 Kona.
+
+Ch0 PCAN. Driving at low speed, switching to Neutral and rolling, then back to Drive while still rolling. Repeats a few times.
+
+### 240512-4-pcan-paddle-braking
+
+2021 Kona.
+
+Ch0 PCAN. Using the regen braking "hold left paddle" feature to fully stop the vehicle.
+
+### 240512-5-pcan-paddle-braking-2
+
+2021 Kona.
+
+Ch0 PCAN. Using the regen braking "hold left paddle" feature to fully stop the vehicle again.
+
+### 240512-6-pcan-charge-door-open-closed
+
+2021 Kona.
+
+Ch0 PCAN. Opening and closing the charge port door (nothing connected to charge port.)
