@@ -7,7 +7,6 @@ Log files are in the SavvyCAN "GVRET" CSV format.
 ## See also
 
 * A DBC file derived mostly from these logs can be found at https://github.com/projectgus/kona-ev-dbc
-* `CAN IDS.md` has some older preliminary notes about CAN IDs visible in these logs. Mostly superceded by the DBC repo.
 * [This Google Sheet](https://docs.google.com/spreadsheets/d/1-9jZafV9eZeBUnPQo7qQHbX2-_4qZfWfRVpidoF1owA/edit#gid=660740603) from 2018 (author unknown) is mostly about Diagnostic OBD2 PIDs, but includes a useful diagram of the vehicle CAN bus architecture showing all the buses connected to the CAN gateway ("CGW" in the diagram, Hyundai seems to more typically call it the Integrated Gateway Power Module "IGPM").
 
 ## Vehicles
@@ -16,6 +15,7 @@ This repo contains logs from:
 
 * 2019 Kona EV Highlander (crashed). Has VESS & Active Air Flap System missing from P-CAN (connector broken).
 * 2021 Kona EV Highlander (crashed).
+* 2020 Kona (not crashed, for heater log).
 
 ## Logs
 
@@ -667,5 +667,7 @@ Ch0 PCAN. Using the regen braking "hold left paddle" feature to fully stop the v
 Ch0 PCAN. Opening and closing the charge port door (nothing connected to charge port.)
 
 ### 240105-1-2020-comp-can-heating.csv
+
+2020 Kona.
 
 Log of the PTC heater (COMP-CAN) bus, starting with the heating off, then turning on to the lowest (17c according to the car) and increasing every few seconds to the max (27c according to the car).
