@@ -671,3 +671,10 @@ Ch0 PCAN. Opening and closing the charge port door (nothing connected to charge 
 2020 Kona.
 
 Log of the PTC heater (COMP-CAN) bus, starting with the heating off, then turning on to the lowest (17c according to the car) and increasing every few seconds to the max (27c according to the car).
+
+## Other Logs
+
+These other logs aren't from complete vehicles:
+
+* `bench_kona` contains some logs my ["bench kona"](https://www.projectgus.com/2024/01/kona-motor-turns/) setup in various stages of development. See README in that directory.
+* `bms_diagnostics` contains some logs of Kona BMS diagnostic session, from [Dala's EV Discord](https://www.patreon.com/dala)
