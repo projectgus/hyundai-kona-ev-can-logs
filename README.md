@@ -665,3 +665,7 @@ Ch0 PCAN. Using the regen braking "hold left paddle" feature to fully stop the v
 2021 Kona.
 
 Ch0 PCAN. Opening and closing the charge port door (nothing connected to charge port.)
+
+### 240105-1-2020-comp-can-heating.csv
+
+Log of the PTC heater (COMP-CAN) bus, starting with the heating off, then turning on to the lowest (17c according to the car) and increasing every few seconds to the max (27c according to the car).
